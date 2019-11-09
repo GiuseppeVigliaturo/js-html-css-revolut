@@ -4,11 +4,42 @@
   padding:0;
   box-sizing: border-box;
 }
+.cookies
+{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: rgb(192, 212, 221);
+  padding: 30px;
+  margin-bottom: 10px;
+}
+.fakecookie
+{
+  padding:15px;
+  background: lightgrey;
+  color: magenta;
+  border-radius: 50%;
+  border: 2px solid magenta ;
+  text-decoration: none;
+}
 header nav
 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 15px;
+}
+header nav .logo a
+{
+padding: 5px;
+text-decoration: none;
+color:  rgb(139, 149, 158);
+font-size: 1.3em;
+}
+header nav .logo a img
+{
+width: 30%;
 }
 header nav ul.navigationmenu
 {
@@ -23,13 +54,93 @@ padding: 10px;
 }
 header nav ul.navigationmenu li a
 {
+padding-right: 5px;
+color:  rgb(139, 149, 158);
 text-decoration: none;
+font-size: 1.3em;
+}
+.app
+{
+  padding:15px;
+  background: magenta;
+  color: white !important;
+  border-radius: 50%;
+}
+header nav ul li a:hover
+{
+color:grey;
+background: #2196f3;
+}
+.dropdown
+{
+  position: relative;
 }
 header nav ul.navigationmenu li ul.dropdowncontent
 {
+  list-style-type: none;
   display: none;
+  position: absolute;
+  left: 0;
+}
+header nav ul.navigationmenu li ul.dropdowncontent li
+{
+  background: white;
+  z-index: 3;
 }
 .menu-toggle
 {
+  color: blue;
+  line-height: 50px;
+  font-size: 24px;
+  margin-right: 10px;
+  cursor: pointer;
   display: none;
+}
+@media (max-width: 991px) {
+  .cookies
+  {
+    display: none;
+  }
+
+  .menu-toggle
+  {
+    display: block;
+  }
+
+  header nav .navright
+  {
+    position: absolute;
+    width: 100%;
+    height: calc(80vh - 50px);
+    top:50px;
+    /*prima mando la navbar tutta a sinistra*/
+    left: -100%;
+    transition: 0.5s;
+  }
+  /* dando left:0 con la clsse active faccio uscire la navbar dalla sinistra*/
+  header nav .navright.active
+  {
+    left: 0;
+    z-index: 3;
+    background-color: white;
+  }
+  header nav .navright ul
+  {
+  display: block;
+  text-align: center;
+  }
+  header nav .navright ul li a
+  {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  header nav .navright ul li ul.dropdowncontent
+  {
+    position:relative;
+
+  }
+  header nav ul li ul li
+  {
+    width: 100%;
+  }
+
 }
