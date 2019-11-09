@@ -22,6 +22,12 @@
   border: 2px solid magenta ;
   text-decoration: none;
 }
+header nav .logo
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex;
+}
 header nav
 {
   display: flex;
@@ -37,10 +43,7 @@ text-decoration: none;
 color:  rgb(139, 149, 158);
 font-size: 1.3em;
 }
-header nav .logo a img
-{
-width: 30%;
-}
+
 header nav ul.navigationmenu
 {
   display: flex;
@@ -61,7 +64,7 @@ font-size: 1.3em;
 }
 .app
 {
-  padding:15px;
+  padding: 15px;
   background: magenta;
   color: white !important;
   border-radius: 50%;
@@ -81,11 +84,13 @@ header nav ul.navigationmenu li ul.dropdowncontent
   display: none;
   position: absolute;
   left: 0;
+  z-index: 3;
 }
 header nav ul.navigationmenu li ul.dropdowncontent li
 {
-  background: white;
-  z-index: 3;
+  background-color: lightgrey;
+  padding: 10px;
+
 }
 .menu-toggle
 {
@@ -96,6 +101,17 @@ header nav ul.navigationmenu li ul.dropdowncontent li
   cursor: pointer;
   display: none;
 }
+h2.title-1-section
+{
+font-size: 4em;
+display: block;
+padding-bottom: 15px;
+}
+.sezione-2
+{
+  margin-top: 10%;
+}
+
 @media (max-width: 991px) {
   .cookies
   {
@@ -127,20 +143,15 @@ header nav ul.navigationmenu li ul.dropdowncontent li
   header nav .navright ul
   {
   display: block;
-  text-align: center;
+  /* text-align: center; */
   }
-  header nav .navright ul li a
+  header nav .navright ul li.contapp
   {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  text-align: center;
   }
   header nav .navright ul li ul.dropdowncontent
   {
     position:relative;
-
-  }
-  header nav ul li ul li
-  {
-    width: 100%;
   }
 
 }
