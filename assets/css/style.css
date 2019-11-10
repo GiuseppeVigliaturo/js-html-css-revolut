@@ -1,3 +1,15 @@
+
+*
+{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+/* classe usata nella versione alternativa */
+.visible
+{
+  display: inline-block;
+}
 .mrg-right{
   margin-right: 150px;
 }
@@ -5,12 +17,6 @@
 {
 width: 50px;
 height: 40px;
-}
-*
-{
-  margin: 0;
-  padding:0;
-  box-sizing: border-box;
 }
 .cookies
 {
@@ -156,7 +162,7 @@ footer ul
     left: -100%;
     transition: 0.5s;
   }
-  /* dando left:0 con la clsse active faccio uscire la navbar dalla sinistra*/
+  /* dando left:0 con la classe active faccio uscire la navbar dalla sinistra*/
   header nav .navright.active
   {
     left: 0;
