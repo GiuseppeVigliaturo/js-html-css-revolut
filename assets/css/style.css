@@ -8,7 +8,11 @@
 /* classe usata nella versione alternativa */
 .visible
 {
-  display: inline-block;
+  display: block;
+}
+.invisible
+{
+  display: none;
 }
 .mrg-right{
   margin-right: 150px;
@@ -160,7 +164,7 @@ footer ul
     top:50px;
     /*prima mando la navbar tutta a sinistra*/
     left: -100%;
-    transition: 0.5s;
+    transition: 1s ease;
   }
   /* dando left:0 con la classe active faccio uscire la navbar dalla sinistra*/
   header nav .navright.active
