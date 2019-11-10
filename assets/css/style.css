@@ -1,3 +1,11 @@
+.mrg-right{
+  margin-right: 150px;
+}
+.R
+{
+width: 50px;
+height: 40px;
+}
 *
 {
   margin: 0;
@@ -49,6 +57,7 @@ header nav ul.navigationmenu
   display: flex;
   flex-direction: row;
   justify-content:flex-start;
+  align-items: baseline;
   list-style-type: none;
 }
 header nav ul.navigationmenu li
@@ -64,10 +73,15 @@ font-size: 1.3em;
 }
 .app
 {
-  padding: 15px;
+  padding: 20px;
   background: magenta;
-  color: white !important;
-  border-radius: 50%;
+  color: white;
+  border-top-left-radius: 20%;
+  border-bottom-left-radius: 20%;
+  border-top-right-radius: 20%;
+  border-bottom-right-radius: 20%;
+  font-size: 1.1em;
+
 }
 header nav ul li a:hover
 {
@@ -111,6 +125,15 @@ padding-bottom: 15px;
 {
   margin-top: 10%;
 }
+footer
+{
+  background-color: #F3F4F5;
+}
+footer ul
+{
+  list-style-type: none;
+}
+
 
 @media (max-width: 991px) {
   .cookies
@@ -127,7 +150,7 @@ padding-bottom: 15px;
   {
     position: absolute;
     width: 100%;
-    height: calc(80vh - 50px);
+    height: calc(100vh - 50px);
     top:50px;
     /*prima mando la navbar tutta a sinistra*/
     left: -100%;
